@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Include Bootstrap via CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Registration Form</title>
+</head>
+<body>
+
+<div class="container" id="header">
+	<h2>Robotics Club Resignation Form</h2>
+</div>
+
+<div class="container">
+	<form>
+		<div class="row mb-3">
+		    <div class="col-sm-6">
+		        <label for="Name">Name</label>
+		        <input type="text" class="form-control form-control-sm" id="Email"placeholder="Name">
+		    </div>
+
+	        <div class="col-sm-6">
+	            <label for="Email">Email</label>
+	            <input type="email" class="form-control form-control-sm" id="Email" placeholder="Email">
+	        </div>
+  		</div>
+
+		<div class="row mb-3">
+            <div class="col-sm-6">
+                <label for="Age">Age</label>
+                <input type="number" class="form-control form-control-sm" id="Age" placeholder="Age">
+            </div>
+
+	        <div class="col-sm-6">
+	                <label for="PhoneNumber">Phone Number</label>
+	                <input type="text" class="form-control form-control-sm" id="PhoneNumber" placeholder="Phone Number">
+	        </div>
+        </div>
+
+  		<div class="row mb-4">
+            <div class="col-12">
+                <label for="Topics" class="form-label">Preferred Robotics Topics</label>
+            </div>
+
+ 			<div class="col-sm-12">
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Software">
+                    <label class="form-check-label" for="Software"> Software </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Programming">
+                    <label class="form-check-label" for="Programming"> Programming </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Application">
+                    <label class="form-check-label" for="Application"> Application </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <label for="experienceLevel" class="form-label">Robotics Experience Level</label>
+            </div>
+
+	        <div class="col-sm-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="experience" id="Elementary" value="Elementary">
+                    <label class="form-check-label" for="Elementary"> Elementary </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="experience" id="Intermediate" value="Intermediate">
+                    <label class="form-check-label" for="Intermediate"> Intermediate </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="experience" id="Proficient" value="Proficient">
+                    <label class="form-check-label" for="Proficient"> Proficient </label>
+                </div>
+	       	</div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <label for="preferredProject" class="form-label">Preferred Robotics Project</label>
+                <select class="form-select" id="preferredProject">
+                    <option selected disabled>Select a project</option>
+                    <option value="Project 1">Project 1</option>
+                    <option value="Project 2">Project 2</option>
+                    <option value="Project 3">Project 3</option>
+                </select>
+            </div>
+        </div>
+
+		<div class="row mb-4">
+            <div class="col-12">
+                <label for="reasoning" class="form-label">Statement of Interest</label>
+                <textarea class="form-control" id="reasoning" rows="8" placeholder="Explain why you are interested in the Robotics Club"></textarea>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit
+        </button>
+
+</body>
+</html>
